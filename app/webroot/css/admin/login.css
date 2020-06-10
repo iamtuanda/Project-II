@@ -1,0 +1,71 @@
+.login {
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    background: url(../../img/admin/mery.jpg);
+    background-size: cover;
+}
+
+.auto-form-wrapper {
+    background: #fff;
+    padding: 40px 40px 15px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+    box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+}
+
+form {
+    position: relative;
+}
+
+.form-group .label,
+.form-group .label {
+    font-size: 0.875rem;
+    line-height: 1;
+    vertical-align: top;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+#forgot-password {
+    text-align: right;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #333;
+}
+
+.error {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    color: #f90101;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+
+.error.active {
+    display: block;
+}
+
+.notBlank {
+    font-size: 14px;
+    top: 97% !important;
+    transform: translate(-13%);
+}
+
+.notBlank:before {
+    border-bottom: 11px solid #9a9595;
+}

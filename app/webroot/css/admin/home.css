@@ -1,0 +1,257 @@
+/* content */
+
+#content-wrapper div#content {
+    background: #f6f6f9;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#content .row {
+    margin: 0;
+}
+
+div#sell-out-products {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+}
+
+#content .title {
+    font-size: 15px;
+    color: #4e73df !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#notification .title {
+    border-bottom: 1px solid #efefef;
+    padding: 10px 15px;
+}
+
+#notification .title .reload {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: rotateZ(-180deg);
+    margin-top: 2px;
+}
+
+#notification .title .reload:hover {
+    color: #2d2de6;
+}
+
+.product-info img.product-img {
+    height: 240px;
+    width: 200px;
+}
+
+#sell-out-products .product-info {
+    padding: 15px 0;
+    /* border: 1px solid #777; */
+    transition: 0.6s;
+}
+
+#sell-out-products .product-info:hover {
+    background-color: #f8fbff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    transition: 0.6s;
+}
+
+.product-info-body {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.product-info-body h4 {
+    color: #00836b;
+    font-size: 14px;
+    height: 32px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-info-body p {
+    margin-bottom: 0;
+}
+
+#content .results {
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.results .icon-result {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.results .icon-result.up.hide,
+.results .icon-result.down.hide {
+    display: none;
+}
+
+.results .figure {
+    float: right;
+    margin-left: 15px;
+}
+
+.results .row.text-center {
+    padding: 20px 0;
+}
+
+.evaluation .figure.ratio {
+    margin-top: 13px;
+}
+
+.fa-cart-plus {
+    color: red;
+}
+
+.evaluation .up {
+    color: #2c9a7a;
+}
+
+.evaluation .down {
+    color: red;
+}
+
+.figure span:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    color: #666;
+}
+
+.ratio span.value {
+    color: #4bac4d;
+}
+
+.chart {
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0 0 0;
+}
+
+.col-xl-12.figure {
+    padding-top: 30px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 40px;
+}
+
+div#notification {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    margin-top: 43px;
+}
+
+.col-xl-4.notification {
+    padding-left: 0;
+}
+
+li.timeline-stream-item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.timeline-stream-detail .icon {
+    margin-right: 15px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #5ec6f2;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 26px;
+    position: absolute;
+}
+
+.timeline-stream-detail {
+    position: relative;
+}
+
+.timeline-stream-detail .icon .icon-bill {
+    font-size: 14px;
+    color: #fff;
+}
+
+ul#timeline-stream {
+    margin: 0 20px;
+}
+
+#timeline-stream li:first-child {
+    margin-top: 20px;
+}
+
+.image-loading {
+    text-align: center;
+}
+
+.image-loading img {
+    width: 50px;
+    height: 50px;
+}
+
+.timeline-stream-detail span.timeline-stream-detail-content {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.activities span.us {
+    color: #056bd3;
+}
+
+.action {
+    font-weight: 700;
+}
+
+.activities span.price {
+    font-weight: 600;
+}
+
+.timeline-stream-detail-content span.datetime {
+    color: #b1b1b1;
+    font-size: 12px;
+}
+
+.see-more {
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #4e73df;
+    color: #fff;
+    display: block;
+}
+
+.see-more.hide {
+    display: none;
+}
+
+.see-more * {
+    pointer-events: none;
+}
+
+.see-more:hover {
+    background-color: #355ed6;
+}
+
+.see-more .arrow-down {
+    font-size: 14px;
+}
+
+.empty-product {
+    width: 100%;
+    font-size: 23px;
+    color: #f30202;
+    margin-bottom: 0;
+}
+
+/* end content */

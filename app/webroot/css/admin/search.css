@@ -1,0 +1,95 @@
+/* Search */
+
+[hidden] {
+    display: none;
+}
+
+.inner-search {
+    float: left;
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+}
+
+div#search {
+    width: 100%;
+}
+
+.inner-search .input-field input.placeholder {
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.inner-search .input-field input:hover,
+.inner-search .input-field input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.inner-search .input-field.first .clear:hover,
+.s128 form .inner-form .row .input-field.first .clear:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.inner-search .input-field.first .clear:hover .button-close,
+.inner-search .input-field.first .clear:focus .button-close {
+    fill: #333;
+}
+
+.inner-search .input-field input {
+    padding: 10px 0 10px 40px;
+    border-radius: 30px;
+    transition: width .2s ease-in;
+    background-image: url(../../img/admin/search.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 20px 20px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    display: block;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.inner-search .input-field input:focus {
+    width: 100%;
+    padding-right: 60px;
+}
+
+.inner-search .input-field input.isFocus {
+    width: 100%;
+}
+
+.inner-search .input-field input.isFocus~.clear {
+    opacity: 1;
+}
+
+.inner-search .input-field input.isFocus {
+    width: 100%;
+}
+
+.inner-search .input-field .clear {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.inner-search .input-field .clear .button-close {
+    fill: #ccc;
+    font-size: 13px;
+    pointer-events: none;
+}

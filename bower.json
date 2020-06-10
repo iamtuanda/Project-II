@@ -1,0 +1,50 @@
+{
+  "name": "mishon",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#^4.3.1",
+    "jquery": "https://github.com/jquery/jquery.git#^3.4.1",
+    "font-awsome": "Font-Awesome#^5.11.2",
+    "jquery-ui": "https://github.com/jquery/jquery-ui.git#^1.12.1",
+    "angular": "^1.7.8"
+  },
+  "exportsOverride": {
+    "angular": {
+      "js": [
+        "**/angular.js",
+        "**/angular.min.js",
+        "**/angular.min.js.map"
+      ]
+    },
+    "bootstrap": {
+      "js": "**/bootstrap.min.js",
+      "css": "**/bootstrap.min.css"
+    },
+    "jquery": {
+      "js": [
+        "**/jquery.min.js",
+        "**/jquery.min.map"
+      ]
+    },
+    "jquery-ui": {
+      "js": [
+        "**/jquery-ui.min.js",
+        "**/widget.js"
+      ]
+    },
+    "font-awsome": {
+      "css": "**/all.css",
+      "js": "**/all.js"
+    }
+  }
+}

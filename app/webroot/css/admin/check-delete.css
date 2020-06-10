@@ -1,0 +1,107 @@
+.frame-check-delete,
+.frame-add-type-category,
+.frame-add-product {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #00000075;
+    z-index: 1051;
+    top: 0;
+    left: 0;
+}
+
+.check-delete .yes-no,
+.check-deleteC .yes-noC {
+    width: 600px;
+    height: max-content;
+    min-height: 190px;
+    position: fixed;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    color: #000;
+    /* text-align: center; */
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.4s;
+    z-index: 2001;
+}
+
+.check-delete .yes-no div,
+.check-deleteC .yes-noC div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.check-delete .yes-no .header,
+.check-deleteC .yes-noC .header {
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.check-delete .yes-no .header .close-yes-no,
+.check-deleteC .yes-noC .header .close-yes-no {
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #a9a1a1;
+    cursor: pointer;
+}
+
+.check-delete .yes-no .header .close-yes-no:hover,
+.check-deleteC .yes-noC .header .close-yes-no:hover {
+    color: #333;
+}
+
+.check-delete .yes-no .content,
+.check-deleteC .yes-noC .content {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.check-delete .yes-no .footer,
+.check-deleteC .yes-noC .footer {
+    margin-bottom: 13px;
+    text-align: right;
+    clear: both;
+}
+
+.check-delete .yes-no .footer button,
+.check-deleteC .yes-noC .footer button {
+    font-size: 12px;
+}
+
+.check-delete .yes-no .footer .yes-bt,
+.check-deleteC .yes-noC .footer .yes-bt {
+    border-color: #ed5c6a;
+    background: #ed5c6a;
+    color: #fff;
+}
+
+.check-delete .yes-no .footer .yes-bt:hover,
+.check-deleteC .yes-noC .footer .yes-bt:hover {
+    background: #f03d4e;
+    border-color: #f03d4e;
+}
+
+.check-delete .yes-no .footer button .icon,
+.check-deleteC .yes-noC .footer button .icon {
+    margin-right: 4px;
+    pointer-events: none;
+}

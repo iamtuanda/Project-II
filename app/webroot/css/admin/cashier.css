@@ -1,0 +1,412 @@
+#cashier-management {
+    background: #f6f6f9;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+#cashier-management .header {
+    padding: 0 40px;
+}
+
+#cashier-management #cashiers-list {
+    background-color: #eaeef3;
+    width: auto;
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin: 0 15px;
+}
+
+#add-cashier {
+    float: right;
+    margin-top: 20px;
+}
+
+#add-cashier button.btn.btn-success {
+    font-size: 13px;
+}
+
+#add-cashier .icon-add-cashier {
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+#cashiers-list .cashier-info {
+    margin-top: 10px;
+}
+
+.cashier-info .row {
+    margin: 0 25px;
+    border: 1px solid #e7e7e7;
+    padding: 25px 5px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    background-color: #fff;
+}
+
+.cashier-info .form-group {
+    position: relative;
+    padding: 15px 0 0;
+}
+
+.cashier-info .form-group input,
+.cashier-info .form-group textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1;
+    color: #333;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+    width: 100%;
+    height: 30px;
+}
+
+.cashier-info .form-group .description {
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    color: #212121;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-top: 6px;
+    height: 87px;
+    resize: none;
+}
+
+.cashier-info .form-group .description:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #337ab7;
+}
+
+.cashier-info .form-group input:focus,
+.cashier-info .form-group input:valid,
+.cashier-info .form-group textarea:focus,
+.cashier-info .form-group textarea:valid {
+    outline: none;
+    width: 100%;
+}
+
+.cashier-info .form-group .control-label {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    color: gray;
+    font-size: 14px;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+}
+
+.cashier-info label.error-phone-number {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: red;
+}
+
+.cashier-info .form-group p {
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+.cashier-info .form-group input:focus~.control-label {
+    color: #337ab7;
+}
+
+.cashier-info .form-group .bar {
+    position: relative;
+    border-bottom: 0.0625rem solid #e7e7e7;
+    display: block;
+}
+
+.cashier-info .form-group .bar::before {
+    content: '';
+    height: 0.125rem;
+    width: 0;
+    left: 50%;
+    bottom: -0.0625rem;
+    position: absolute;
+    background: #337ab7;
+    -webkit-transition: left 0.28s ease, width 0.28s ease;
+    transition: left 0.28s ease, width 0.28s ease;
+    z-index: 2;
+}
+
+.cashier-info .form-group input:focus~.bar::before {
+    width: 100%;
+    left: 0;
+}
+
+.datepicker table {
+    font-size: 13px !important;
+}
+
+.datepicker td,
+.datepicker th {
+    width: 40px !important;
+    height: 24px !important;
+}
+
+.cashier-info .cashier-img {
+    margin: auto;
+    position: relative;
+}
+
+.reset-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-left: 5px;
+    display: none;
+}
+
+.cashier-img .image-main {
+    position: relative;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.cashier-info .cashier-img img.img-cashier {
+    width: 100%;
+    max-height: 60%;
+    border-radius: 7px;
+}
+
+.cashier-img .image-main .edit-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+.edit-image input.input-edit {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+
+
+.edit-image .input-edit+label {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: #dadada8c;
+    overflow: hidden;
+    color: #333;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.edit-image .input-edit+label:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.edit-image span.hover-edit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn-cashier {
+    margin: auto;
+}
+
+.btn-cashier .icon-cashier {
+    font-size: 12px;
+}
+
+.btn-cashier .btn1.shadow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-cashier .btn1.shadow:hover {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: .8;
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, .26) !important;
+    border: none;
+}
+
+.btn-cashier .edit-cashier {
+    background-color: #03a9f4;
+    margin-bottom: 10px;
+}
+
+.btn-cashier .delete-cashier {
+    background-color: #ed5564;
+}
+
+.btn-cashier .edit-delete {
+    transition: 0.4s;
+}
+
+.btn-cashier .save {
+    display: none;
+}
+
+.btn-cashier .save button {
+    font-size: 13px;
+    width: 85px;
+}
+
+.btn-cashier .save button .icon-save {
+    margin-right: 4px;
+}
+
+.btn-cashier .save .bt-save {
+    margin-bottom: 8px;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-footer button {
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1px;
+}
+
+.modal-footer button .icon-cadd,
+.modal-footer button .icon-close {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+
+.modal-content label {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+#addCashier .error-phone-number {
+    color: #e41414;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#addCashier .modal-content .input-phone {
+    width: calc(100% - 550px);
+    margin-left: -49px;
+}
+
+#addCashier .new-cashier-image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#addCashier .new-cashier-image .default-img-cashier {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #5d5a5a;
+    border-radius: 50%;
+}
+
+#addCashier .input-group.date {
+    width: 41%;
+    margin-left: -49px;
+}
+
+#addCashier .input-group.date input {
+    border-radius: 0.25rem;
+}
+
+#addCashier .input-group .input-group-addon .icon-date {
+    width: 40px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+.new-cashier-image .edit-image {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.new-cashier-image .edit-image label {
+    border-radius: 50%;
+}
+
+button.close {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+#cashier-management .notBlank {
+    left: 25%;
+}
+
+#addCashier .notBlank {
+    top: 84%;
+}
+
+#addCashier #pcashier+.notBlank {
+    top: 84%;
+    left: 34%;
+}
+
+@media only screen and (max-width: 992px) {
+    .cashier-info .cashier-img img.img-cashier {
+        width: 60%;
+    }
+
+    .cashier-img .image-main .edit-image {
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .cashier-info .cashier-img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    #addCashier .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}

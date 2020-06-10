@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+em {
+    font-size: 14px;
+}
+
+form#signupFrom input {
+    font-size: 14px;
+}
+
+.main-content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: none;
+    background: rgb(255, 255, 255);
+    overflow: unset;
+    border-radius: 4px;
+    outline: none;
+    padding: 0px;
+    width: 900px;
+    margin: 0px auto;
+}
+
+.signin-img {
+    width: 360px;
+    float: left;
+    padding: 15px 35px;
+    background: #67ccff!important;
+    color: white;
+}
+
+.signin-img img {
+    max-width: 100%;
+    border-style: none;
+}
+
+.signin-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.signin-set-btn {
+    margin-bottom: auto;
+}
+
+.form-login {
+    padding-top: 34px;
+}
+
+.signin {
+    border-bottom: 3px solid rgb(27, 168, 255);
+}
+
+.signup {
+    border-bottom: 3px solid rgb(208, 210, 214);
+    /*color: rgb(208, 210, 214);*/
+}
+
+.text-color {
+    color: rgb(208, 210, 214);
+}
+
+.checkmark {
+}
+
+.form-group-inputdate {
+    padding: 0 5px;
+    margin-left: 115px;
+    display: flex;
+    align-items: center;
+}
+
+.form-control-birthday {
+    width: 200px;
+    text-align: center;
+}
+
+label.error.error-signin-name {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    display: none;
+}
+
+label.error.error-signin-name.show{
+    display: inline-block;
+}
+
+label.error.error-signin-name:before {
+    content: '';
+    position: absolute;
+    top: 159px;
+    left: 226px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid red;
+}
+
+label.error.error-signin-pwd {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    display: none;
+}
+
+label.error.error-signin-pwd.show{
+    display: inline-block;
+}
+
+label.error.error-signin-pwd:before {
+    content: '';
+    position: absolute;
+    top: 212px;
+    left: 226px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid red;
+}
+
+
+.eye {
+    width: 20px;
+    float: right;
+    margin-top: -25px;
+    z-index: 3;
+    position: relative;
+    padding-right: 25px;
+}
+
+#enable {
+    display: none;
+}
+
+.eyesu {
+    width: 20px;
+    float: right;
+    margin-top: -45px;
+    margin-right: 9px;
+    z-index: 2;
+    position: relative;
+}
+
+#enablesu {
+    display: none;
+}
+
+
+
+
+/*signup*/
+
+.form-inline .form-control {
+    width: 290px
+}
+
+.form-inline .form-control-name {
+    margin-left: 91px;
+}
+
+.form-inline .form-control-email {
+    margin-left: 127px;
+}
+
+.form-inline .form-control-pwd {
+    margin-left: 94px;
+}
+
+.form-inline .form-control-cpwd {
+    margin-left: 28px;
+}
+
+.form-inline .form-control-gender {
+    margin-left: 75px;
+}
+
+.text-gray-dark {
+    margin: auto;
+    padding-left: 85px;
+}
+
+.signup-gender {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+/*check in signup*/
+
+.error {
+    padding-left: 180px;
+    margin-top: 5px;
+}
+
+label.error-signup-name {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+label.error-signup-name.show {
+    display: block;
+}
+
+label.error-signup-pwd {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+label.error-signup-pwd.show {
+    display: block;
+}
+
+label.error-signup-cpwd {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+label.error-signup-cpwd.show {
+    display: block;
+}
+
+label.error-signup-email {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+label.error-signup-email.show {
+    display: block;
+}
+
+input#signinpassword:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+input#singin:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.forgot-password {
+    font-size: 14px;
+}
+
+#signupFrom .form-group input.form-control {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width:  992px){
+
+    /*sing in*/
+    .main-content {
+        width: 720px;
+    }
+
+    .form-group .input-group .form-control {
+        font-size: 14px;
+    }
+
+    #signupFrom .form-group .form-control {
+        width: 100%;
+        padding: 4px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .form-inline .form-control-gender {
+        margin-left: 0px;
+    }
+
+    .form-group-inputdate {
+       margin-left: 0px; 
+   }
+
+   .eyesu {
+    margin-top: -51px;
+    margin-right: 0px; 
+    
+    }
+
+    .error {
+        padding: 4px 4px;
+        margin-top: 0px;
+    }
+
+    .text-gray-dark {
+        padding-left: 0px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .main-content {
+        width: 540px;
+    }
+
+    .signin-img {
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+
+    .main-content {
+        width: 440px;
+    }
+
+    .form-group .input-group .form-control {
+        font-size: 12px;
+    }
+
+    label.radio-container.pl-5.pr-5 {
+        margin-right: 40px;
+        padding: 0!important;
+    }
+
+    .form-inline .form-control-gender {
+        margin-left: 20px;
+    }
+
+    .tab-content {
+        font-size: 14px;
+    }
+
+    #signupFrom .form-group input.form-control {
+        font-size: 14px;
+    }
+
+    .form-control-birthday {
+        margin-bottom: 13px;
+    }
+
+
+}
+
+@media screen and (width: 768px){
+    .signin-form {
+        flex: none!important;
+        max-width: 100%;
+    }
+}
+
+

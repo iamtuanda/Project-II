@@ -1,0 +1,287 @@
+#customer-management {
+    background: #f6f6f9;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+#customer-management #customers-list {
+    background-color: #eaeef3;
+    width: auto;
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+#customer-management #customers-list::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.title {
+    margin-top: 25px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.table-responsive {
+    padding: 0;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.table {
+    margin-bottom: 0 !important;
+}
+
+.table-responsive .table thead th {
+    border: none;
+}
+
+.table-hover tbody tr:hover>.customer-image>img {
+    transform: scale(1.2) translateY(-10px);
+    border: 2px solid #fff;
+    transition: 0.4s;
+}
+
+.table-responsive .table-hover tbody tr td:last-child {
+    padding: 0;
+}
+
+.table-responsive .table-hover tbody tr:hover {
+    background-color: #d1f3ff;
+}
+
+.table-responsive .table-hover .deleteC {
+    padding: 3px 10px;
+    background-color: transparent;
+    border: none;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+    border-radius: 5px;
+}
+
+.table-responsive .table-hover .deleteC:hover {
+    background-color: #C71C22;
+}
+
+.table-responsive .table-hover .deleteC:hover .icon-deleteC {
+    color: #fff;
+}
+
+.table-responsive .table-hover .deleteC .icon-deleteC {
+    color: #C71C22;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.table-responsive .table td {
+    border-top: 0;
+    vertical-align: unset;
+}
+
+.table-responsive .check-box {
+    padding: 0;
+}
+
+.table-responsive .check-all {
+    position: relative;
+}
+
+.table-responsive .check-all .form-check-input {
+    top: 34%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%);
+    cursor: progress;
+}
+
+.table-responsive .check-box .form-check-input {
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%);
+    cursor: progress;
+}
+
+.table-responsive .table .customer-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transition: 0.4s;
+}
+
+#customers-list .delete-all .icon-delete-all {
+    font-size: 11px;
+    margin-right: 5px;
+    pointer-events: none;
+}
+
+#customers-list .delete-all {
+    font-size: 13px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    display: none;
+    float: left;
+}
+
+#customers-list .checked-message {
+    float: left;
+    color: #888;
+    font-size: 12px;
+    margin-left: 10px;
+    display: none;
+    line-height: 4;
+}
+
+#customers-list .checked-message .quantity b {
+    color: red;
+}
+
+#customers-list .checked-message .unchecked-all {
+    color: #20c997 !important;
+    cursor: pointer;
+}
+
+#customers-list .checked-message .unchecked-all:hover {
+    color: #19a27a !important;
+}
+
+#customers-list .checked-message .unchecked-all .icon-unchecked-all {
+    margin-right: 5px;
+}
+
+/* Search */
+
+[hidden] {
+    display: none;
+}
+
+#customer-management #customers-list .header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.inner-searchC {
+    margin-top: 20px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.4s;
+    right: 70px;
+}
+
+#searchC {
+    width: 100%;
+}
+
+.inner-searchC .input-fieldC input.placeholder {
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.inner-searchC .input-fieldC input:hover,
+.inner-searchC .input-fieldC input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.inner-searchC .input-fieldC.first .clearC:hover,
+.input-fieldC.first .clearC:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.inner-searchC .input-fieldC.first .clearC:hover .button-closeC,
+.inner-searchC .input-fieldC.first .clearC:focus .button-closeC {
+    fill: #333;
+}
+
+.inner-searchC .input-fieldC input {
+    padding: 10px 0 10px 40px;
+    border-radius: 30px;
+    transition: width .2s ease-in;
+    background-image: url(../../img/admin/search.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 20px 20px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    display: block;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.inner-searchC .input-fieldC input:focus {
+    width: 100%;
+    padding-right: 60px;
+}
+
+.inner-searchC .input-fieldC input.isFocus {
+    width: 100%;
+}
+
+.inner-searchC .input-fieldC input.isFocus~.clearC {
+    opacity: 1;
+}
+
+.inner-searchC .input-fieldC input.isFocus {
+    width: 100%;
+}
+
+.clearC .button-closeC {
+    fill: #ccc;
+    width: 14px;
+    height: 14px;
+}
+
+.inner-searchC .input-fieldC .clearC {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+
+.inner-searchC .input-fieldC .clearC .button-clear-searchC {
+    fill: #ccc;
+    width: 14px;
+    height: 14px;
+}
+
+p.empty {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
+
+@media only screen and (max-width: 992px) {
+    .table-responsive {
+        font-size: 14px;
+    }
+
+    .table-responsive .delete-all {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .table-responsive {
+        font-size: 12px;
+    }
+}

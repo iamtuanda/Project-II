@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quantity-number {
+    position: absolute;
+    top: 42%;
+}
+
+.name-product {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name-product a {
+    text-decoration: none;
+}
+
+.remove-product {
+    text-align: center;
+}
+
+.remove-product a {
+    text-align: center;
+    line-height: 155px;
+}
+
+.image-product {
+    padding: 12px;
+    text-align: center;
+}
+
+.image-product .image img {
+    width: 130px;
+    height: 130px;
+}
+
+.image-product .image {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.cart {
+    min-height: 500px;
+}
+
+.quantity.number {
+    position: relative;
+}
+
+.quantity.number input:focus {
+    outline: none;
+}
+
+.quantity.number span {
+    cursor: pointer;
+}
+
+label.control-label.col-sm-4 {
+    font-size: 19px;
+}
+
+button.btn.btn-default:hover {
+    background: #3F7CF7;
+    color: white;
+}
+
+#cart {
+    background: rgb(244,244,244);
+    padding-top: 25px;
+    padding-bottom: 33px;
+    margin-top: 105px;
+    min-height: 550px;
+}
+.btn-payment {
+    color: white;
+    cursor: pointer;
+}
+
+.amount small {
+    color: black;
+    font-size: 12px;
+    display: block;
+}
+
+.amount p {
+    font-size: 26px;
+    color: red;
+    margin-top: -9px;
+}
+
+.amount {
+    position: absolute;
+    right: 12px;
+}
+
+.total span {
+    position: absolute;
+    left: 16px;
+}
+
+.row.total {
+    height: 76px;
+    padding-top: 10px;
+}
+
+.number .minus,.number .plus{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    font-weight: 700;
+    line-height: 23px;
+    user-select: none;
+    cursor: pointer;
+}
+
+span.minus:hover {
+    background: #e6e5e5;
+}
+.number .minus {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: 0;
+}
+
+.number .plus {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 0;
+}
+
+span.plus:hover {
+    background: #e6e5e5;
+}
+
+.number .quantity-number .quantity{
+    height: 25px;
+    width: 32px;
+    text-align: center;
+    /* font-size: 13px; */
+    border:1px solid #ddd;
+    border-radius:4px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    font-weight: 700;
+    user-select: none;
+}
+
+.price-product {
+    font-weight: bold;
+    line-height: 155px;
+    text-align: center;
+    user-select: none;
+}
+
+#cart span.quantity {
+    font-size: 15px;
+}
+
+#cart .title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.info-product {
+    position: relative;
+}
+
+.frame-payment {
+    background: white;
+    border-radius: 5px;
+    padding: 10px 32px;
+    height: 155px;
+}
+
+.cart-product {
+    background: white;
+    border-radius: 5px;
+    border-bottom: 1px solid #f3f0f0;
+    height: 155px;
+    margin-right: 9px;
+}
+
+.frame-product {
+    background: #F4F4F4;
+}
+
+.bg-white {
+    background: white;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 25px;
+}
+.bg-white span.no-product {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    text-align: center;
+}
+span.btn.btn-warning.continue-shopping {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 576px) {
+    #cart {
+        margin-top: 115px;
+    }
+
+div#cart {}
+
+    .image-product .image img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .image-product {
+        padding: 42px 16px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .cart-product{
+        margin-right: 0;
+    }
+
+    .frame-product{
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .image-product .image img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .image-product {
+        padding: 42px 16px;
+    }
+
+    .frame-product {
+    padding-left: 0px!important;
+    }
+}
+

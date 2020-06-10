@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+span.btn.btn-warning.continue-shopping {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span.no-order {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    text-align: center;
+}
+
+.text-center.bg-white {
+    background: white;
+    position: relative;
+    width: 100%;
+    height: 332px;
+    margin-bottom: 25px;
+}
+
+.cart-empty {
+    min-height: 364px;
+}
+
+.notification {
+    width: 330px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    border-radius: 4px;
+    transform: translateY(500px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    height: 50px;
+    line-height: 50px;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-500px);
+    z-index: 999999999;
+}
+
+div#destroy-notify {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: gray;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.3;
+}
+
+/* order destroy */
+.notify-frame-notify {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.notify-frame-notify strong {
+    font-size: 18px;
+}
+
+button.btn.btn-default.btn-cancel {
+    font-weight: 400;
+    background: gray;
+    color: white;
+}
+
+button.btn.btn-default.btn-cancel:hover {
+    background: #6a6767;
+}
+
+button.btn.btn-danger.btn-confirm {
+    font-weight: 400;
+}
+
+.notify-frame-info {
+    font-weight: 400;
+}
+
+.notify-frame-header {
+    position: relative;
+    height: 60px;
+}
+
+.notify-frame-close {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    font-weight: 100;
+    top: -3px;
+    cursor: pointer;
+}
+
+.notify-frame-close .bill-close-icon {
+    color: black;
+}
+
+.notify-frame-close .bill-close-icon:hover {
+    color: gray!important;
+    background: white!important;
+}
+
+.notify-frame-title {
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.notify-frame {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    z-index: 10024;
+    width: 500px;
+    height: 215px;
+    background: white;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    padding: 20px 30px;
+    color: #601420;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.notify-frame.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+/* order destroy */
+
+#orders h4 {
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+div#orders {
+    min-height: 457px;
+    padding: 50px 0px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 105px;
+}
+
+div#orders tbody {
+    font-size: 14px;
+}
+
+div#orders tbody td:nth-child(1) {
+    text-align: center;
+}
+
+div#orders ul li {
+    height: 40px;
+    width: 483px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#orders ul li:nth-child(1) {
+}
+
+div#orders ol {}
+
+.cancel-order {
+    margin-bottom: 15px;
+}
+
+.track-order {
+    margin-bottom: 15px;
+}
+
+.show-orders {
+    margin-bottom: 15px;
+}
+
+.show-orders a {
+    text-decoration: none!important;
+    font-size: 14px;
+}
+
+.row.order-footer {
+    margin-top: 17px;
+}
+
+tfoot {
+    border-top: 1px solid #ded7d7;
+}
+
+tfoot tr {
+    border: 0;
+}
+
+tfoot td {
+    text-align: right;
+    border: 0px!important;
+}
+
+.product-info {
+    float: left;
+    width: 80%;
+}
+
+thead.text-center {
+    width: 100%;
+}
+
+th {
+    border-top: 0!important;
+}
+
+tbody tr {
+    line-height: 62px;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: #eaf5ff;
+}
+
+.order-content img.img-responsive {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.order-content table.table {
+    font-size: 14px;
+    width: 100%;
+    display: inline-table;
+}
+
+.order-content table.table a {
+    text-decoration: none;
+    width: 600px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.order-method-payment {
+    margin-bottom: 12px;
+}
+
+.order-method-shipping {
+    margin-bottom: 12px;
+}
+
+.order-address {
+    margin-bottom: 12px;
+}
+
+.row.order-header {
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.order-content .card.card-default {
+    padding: 6px;
+    overflow: auto;
+}
+
+.row.order-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.row.order-info .card {
+    min-height: 116px;
+}
+
+.row.order-info h4 {
+    font-size: 14px;
+}
+
+.order-time {
+    text-align: right;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.order-status {
+    font-size: 19px;
+}
+
+div#order-view {
+    min-height: 457px;
+    padding: 50px 0px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 105px;
+}
+
+.notify-frame {
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 992px){
+    .order-content table.table a{
+        width: 100%;
+        display: block;
+    }
+}
