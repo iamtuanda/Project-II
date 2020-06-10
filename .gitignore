@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 
-# for htdocs
+# for htdocsgit
 ######################
 *.log
 *.csv
@@ -38,3 +38,21 @@ bower_components
 
 # Optional npm cache directory
 .npm
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### Vagrant ###
+# General
+.vagrant/
+
+# Log files (if you are creating logs in debug mode, uncomment this)
+# *.log
+
+### Vagrant Patch ###
+*.box
