@@ -1,72 +1,17 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+
 # for htdocs
 ######################
 *.log
 *.csv
 *.tsv
-
-ts-logs/*
-!ts-logs/.empty
-
-sq_log/*
-!sq_log/.empty
-
-logs/*
-!logs/.empty
-
-# ts-save_file
-!ts-save_file/
-ts-save_file/*
-!ts-save_file/.htaccess
-
-!ts-save_file/order/
-ts-save_file/order/*
-!ts-save_file/order/.empty
-
-!ts-save_file/inspect/
-ts-save_file/inspect/*
-!ts-save_file/inspect/.empty
-
-!ts-save_file/invoice.v8/
-ts-save_file/invoice.v8/*
-!ts-save_file/invoice.v8/.empty
-
-!ts-save_file/mitsumori.v8/
-ts-save_file/mitsumori.v8/*
-!ts-save_file/mitsumori.v8/.empty
-
-!ts-save_file/project/
-ts-save_file/project/*
-!ts-save_file/project/.empty
-
-# ts-tmp
-ts-tmp/*
-!ts-tmp/.empty
-
-# upfile
-upfile/*
-!upfile/profile-photo/
-upfile/profile-photo/*
-!upfile/profile-photo/.empty
-
-!upfile/inport_fs/
-upfile/inport_fs/*
-!upfile/inport_fs/.empty
-
-!upfile/sf_csv/
-upfile/sf_csv/*
-!upfile/sf_csv/.empty
-
-!upfile/profile-photo--/
-upfile/profile-photo--/*
-!upfile/profile-photo--/.empty
-
-!upfile/wf/
-upfile/wf/*
-!upfile/wf/.empty
-
-!upfile/document/
-upfile/document/*
-!upfile/document/.empty
 
 # for mac
 ######################
@@ -80,3 +25,16 @@ upfile/document/*
 *.swp
 *.swo
 
+# Dependency directories
+node_modules/
+
+.git
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Optional npm cache directory
+.npm
