@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
         'persistent' => false,
         'host' => 'localhost',
         'login' => 'root',
-        'password' => '123456',
+        'password' => 'abc123',
         'database' => 'mishon',
         'prefix' => '',
         'encoding' => 'utf8',

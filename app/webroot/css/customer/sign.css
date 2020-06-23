@@ -66,12 +66,8 @@ form#signupFrom input {
     color: rgb(208, 210, 214);
 }
 
-.checkmark {
-}
-
 .form-group-inputdate {
-    padding: 0 5px;
-    margin-left: 115px;
+    margin-left: auto;
     display: flex;
     align-items: center;
 }

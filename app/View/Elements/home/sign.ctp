@@ -63,7 +63,7 @@
                                     <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
                                         <div class="col-sm-12 pt-2">
                                             <form id="signupFrom">
-                                                <div class="form-group form-inline">
+                                                <div class="form-group form-inline justify-content-between">
                                                     <label class="font-weight-bold"> Username
                                                         <span class="text-danger">*</span>
                                                     </label>
@@ -73,14 +73,14 @@
                                                     </div>
                                                     <label for="error" class="error error-signup-name">Please enterer your name</label>
                                                 </div>
-                                                <div class="form-group form-inline">
+                                                <div class="form-group form-inline justify-content-between">
                                                     <label class="font-weight-bold">Email 
                                                         <span class="text-danger">*</span>
                                                     </label>
                                                     <input type="email" name="signupemail" id="signupemail" class="form-control form-control-email signup-email" placeholder="example@com.vn" required>
                                                     <label for="error" class="error error-signup-email">Please enterer your email</label>
                                                 </div>
-                                                <div class="form-group form-inline">
+                                                <div class="form-group form-inline justify-content-between">
                                                     <label class="font-weight-bold">Password 
                                                         <span class="text-danger">*</span>
                                                     </label>
@@ -91,14 +91,14 @@
                                                     <i id="disablesu" class="far fa-eye-slash" aria-hidden="true"></i>
                                                 </span>
                                                 <label for="error" class="error error-signup-pwd">Please enterer your password</label>
-                                                <div class="form-group form-inline">
+                                                <div class="form-group form-inline justify-content-between">
                                                     <label class="font-weight-bold">Confirm Password 
                                                         <span class="text-danger">*</span>
                                                     </label>
                                                     <input type="password" name="signupcpassword" id="signupcpassword" class="form-control form-control-cpwd signup-pwd-cf" placeholder="***********" required>
                                                     <label for="error" class="error error-signup-cpwd"> Please enterer your password </label>
                                                 </div>
-                                                <div class="form-group form-inline">
+                                                <div class="form-group form-inline justify-content-between">
                                                     <label for="" class="font-weight-bold"> Gender </label>
                                                     <div class="form-control-gender form-inline">
                                                         <label for="" class="radio-container pl-5 pr-5"> 
@@ -112,8 +112,8 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="form-group form-inline">
-                                                    <div class="input-group">
+                                                <div class="form-group form-inline justify-content-between">
+                                                    <div class="input-group" style="width:100%">
                                                         <label class="font-weight-bold">Birthday</label>
                                                         <div class="form-group-inputdate">
                                                             <input type="text" name="birthday" class="form-control-birthday date signup-birthday info-birthday" id="datepicker" readonly>
@@ -123,7 +123,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>
-                                                        <input type="checkbox" name="signupcondition" id="signupcondition" required> I agree with the <a href="javascript:;">Mishon team</a> for Registration.
+                                                        <input type="checkbox" name="signupcondition" id="signupcondition" required> I agree with the <a href="javascript:;">Tuanda</a> for Registration.
                                                     </label>
                                                 </div>
                                                 <div class="form-group">
